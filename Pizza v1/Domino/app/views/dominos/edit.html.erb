@@ -1,0 +1,48 @@
+<h1>Editing domino</h1>
+
+<% form_for(@domino) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :First_name %><br />
+    <%= f.text_field :First_name %>
+  </p>
+  <p>
+    <%= f.label :Last_name %><br />
+    <%= f.text_field :Last_name %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :Phone_no %><br />
+    <%= f.text_field :Phone_no %>
+  </p>
+  <p>
+    <%= f.label :Age %><br />
+    <%= f.text_field :Age %>
+  </p>
+  <p>
+    <%= f.label :Company_name %><br />
+    <%= f.text_field :Company_name %>
+  </p>
+  <p>
+    <%= f.label :Address %><br />
+    <%= f.text_area :Address %>
+  </p>
+  <p>
+    <%= f.label :postcode %><br />
+    <%= f.text_field :postcode %>
+  </p>
+  <p>
+    <%= f.label :State %><br />
+    <%= f.text_field :State %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @domino %> |
+<%= link_to 'Back', dominos_path %>

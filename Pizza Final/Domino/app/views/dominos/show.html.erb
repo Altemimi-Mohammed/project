@@ -1,0 +1,48 @@
+<h1>Preview</h1>
+
+<p>
+  <b>First name:</b>
+  <%=h @domino.First_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @domino.Last_name %>
+</p>
+
+<p>
+  <b>Phone no:</b>
+  <%=h @domino.Phone_no %>
+</p>
+
+<p>
+  <b>Num of Pizza:</b>
+  <%=h @domino.Age %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @domino.Address %>
+</p>
+
+<p>
+  <b>Postcode:</b>
+  <%=h @domino.postcode %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @domino.State %>
+</p>
+<p>
+  <b>Pizza Type:</b>
+  <%=h @domino.Company_name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @domino.password %>
+</p>
+
+<%= link_to 'Edit', edit_domino_path(@domino) %> |
+<%= link_to 'Back', dominos_path %>

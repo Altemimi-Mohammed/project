@@ -1,0 +1,27 @@
+
+<h1>Listing for Domino's customer <%= params[:search_string] %></h1>
+
+<table>
+  <tr>
+    <th>First_name</th>
+    <th>Last_name</th>
+	<th>phone_no</th>
+	<th>age</th>
+    <th>pizza_type</th>
+    <th>price</th>
+	<th>postcode</th>
+	<th>state</th>
+  </tr>
+
+<% for domino in @dominos %>
+  <tr>
+    <td><%=h domino.First_name %></td>
+    <td><%=h domino.Last_name %></td>
+    <td><%=h domino.Phone_no %></td>
+    <td><%=h domino.Age %></td>
+    <td><%= link_to 'Show', domino%></td>
+    <td><%= link_to 'Edit', edit_domino_path(domino) %></td>
+    <td><%= link_to 'Destroy', domino, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

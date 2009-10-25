@@ -1,0 +1,2 @@
+module DominosHelper
+end
